@@ -1,5 +1,7 @@
 header <- dashboardHeader(
-  title = "Dashboard"
+  title = "Dashboard",
+  source("template/contact.R", local = TRUE)$value,
+  profileUI("prof")
 )
 
 sidebar <- dashboardSidebar(
@@ -10,10 +12,10 @@ sidebar <- dashboardSidebar(
       style = "position: absolute; bottom: 0;",
       a(
         img(
-          src = "https://res.cloudinary.com/dxqnb8xjb/image/upload/v1499450435/logo-blue_hnvtgb.png", 
-          width = 75
+          src = "https://res.cloudinary.com/dxqnb8xjb/image/upload/v1509563497/tychobra-logo-blue_dacbnz.svg", 
+          width = 50
         ), 
-        href = "https://tychobra.com/dashboards"
+        href = "https://tychobra.com/shiny"
       )
     )
   )

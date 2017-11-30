@@ -1,5 +1,6 @@
 function(input, output, session) {
+  callModule(profile, "prof")
   output$debuggin <- renderPrint({
-    "Hello Dashboard. This output style is helpful for to debugging"
+    "Hello Dashboard. `renderPrint` is useful for debugging"
   })
 }

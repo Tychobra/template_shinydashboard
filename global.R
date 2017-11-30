@@ -2,5 +2,8 @@ library(dplyr)
 library(highcharter)
 library(DT)
 library(shinydashboard)
-#library(tychobratools)
+library(tychobratools)
 
+tychobratools::hc_global_options()
+
+source("template/profile.R", local = TRUE)
