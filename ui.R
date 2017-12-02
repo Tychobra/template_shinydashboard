@@ -1,7 +1,7 @@
 header <- dashboardHeader(
   title = "Dashboard",
   source("template/contact.R", local = TRUE)$value,
-  profile_icon_ui("prof")
+  tychobratools::profile_icon_ui("prof")
 )
 
 sidebar <- dashboardSidebar(
