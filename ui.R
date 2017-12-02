@@ -1,7 +1,7 @@
 header <- dashboardHeader(
   title = "Dashboard",
   source("template/contact.R", local = TRUE)$value,
-  profileUI("prof")
+  profile_icon_ui("prof")
 )
 
 sidebar <- dashboardSidebar(

@@ -1,5 +1,5 @@
 
-profile <- function(input, output, session) {
+profile_icon <- function(input, output, session) {
   output$auth_user <- renderText({
     if (is.null(session$user)) {
       "Guest"
@@ -9,7 +9,7 @@ profile <- function(input, output, session) {
   }) 
 }
 
-profileUI <- function(id) {
+profile_icon_ui <- function(id) {
   ns <- NS(id)
   
   tags$li(
