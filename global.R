@@ -5,5 +5,3 @@ library(shinydashboard)
 library(tychobratools)
 
 tychobratools::hc_global_options()
-
-source("template/profile.R", local = TRUE)
