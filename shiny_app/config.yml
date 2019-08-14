@@ -1,9 +1,0 @@
-default:
-  app_name: "template-shinydashboard"
-  db:
-    dbname: "template-shinydashboard"
-    host: "104.196.200.157"
-    port: 5432
-    user: "postgres"
-    password: "attic_12_escape"
-  
