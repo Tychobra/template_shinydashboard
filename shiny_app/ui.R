@@ -1,7 +1,5 @@
 header <- dashboardHeader(
-  title = "Dashboard",
-  #source("template/contact.R", local = TRUE)$value,
-  tychobratools::profile_icon_ui("prof")
+  title = "Dashboard"
 )
 
 sidebar <- dashboardSidebar(
@@ -12,9 +10,9 @@ sidebar <- dashboardSidebar(
       style = "position: absolute; bottom: 0;",
       a(
         img(
-          src = "https://res.cloudinary.com/dxqnb8xjb/image/upload/v1509563497/tychobra-logo-blue_dacbnz.svg", 
+          src = "https://res.cloudinary.com/dxqnb8xjb/image/upload/v1509563497/tychobra-logo-blue_dacbnz.svg",
           width = 50
-        ), 
+        ),
         href = "https://tychobra.com/shiny"
       )
     )
@@ -23,8 +21,8 @@ sidebar <- dashboardSidebar(
 
 body <- dashboardBody(
   tags$head(
-    tags$link(rel = "stylesheet", type = "text/css", href = "styles.css"),
-    tags$script(src = "custom.js"),
+    #tags$link(rel = "stylesheet", type = "text/css", href = "styles.css"),
+    #tags$script(src = "custom.js"),
     tags$link(rel="icon", href="https://res.cloudinary.com/dxqnb8xjb/image/upload/v1499450435/logo-blue_hnvtgb.png")
   ),
   tabItems(
