@@ -1,4 +1,4 @@
-# template-shinydashboard
+# template_shinydashboard
 
 Starter template for creating a shinydashboard
 
