@@ -23,3 +23,4 @@ Only files and folders that need to be deployed with the Shiny app go in the "sh
   - "data/" - contains any flat files that need to be deployed with the app
   - "funs/" - contains functions specific to the project calculations.  e.g. if the Shiny app calculates insurance rates, any functions to calculate the rate would go here.
   - "helpers/" - contains functions for building UI and other generic Shiny utility.  E.g. a function to generate the UI for a custom widget would go here. 
+  - "modules/" Shiny modules go here
