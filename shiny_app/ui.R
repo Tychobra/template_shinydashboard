@@ -1,11 +1,11 @@
 header <- dashboardHeader(
-  title = "Dashboard"
+  title = "Durk's Shiny App"
 )
 
 sidebar <- dashboardSidebar(
   sidebarMenu(
-    menuItem("Dashboard", tabName = "dashboard", icon = icon("dashboard")),
-    menuItem("Tab 2", tabName = "tab_2", icon = icon("balance-scale")),
+    menuItem("Dashboard Menu Text Test", tabName = "dashboard", icon = icon("dashboard")),
+    menuItem("Liquor Store Prices", tabName = "tab_2", icon = icon("balance-scale")),
     tags$div(
       style = "position: absolute; bottom: 0;",
       a(
@@ -40,7 +40,22 @@ body <- dashboardBody(
       fluidRow(
         column(
           width = 12,
-          h1("Tab 2")
+          box(
+            sliderInput(
+              "priceInput", "Price",
+              min = 0, max = 100,
+              value = c(25,40), pre = "$",
+            ),
+            radioButtons("typeInput", "Product type",
+                         choices = c("BEER", "REFRESHMENT", "SPIRITS", "WINE"),
+                         selected = "BEER"),
+            uiOutput("countryOutput")
+        ),
+          box(
+            plotOutput("coolplot"),
+            br(), br(),
+            tableOutput("results")
+          )
         )
       )
     )

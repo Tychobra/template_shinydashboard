@@ -1,0 +1,10 @@
+name: shiny_app
+title:
+username:
+account: stantond11
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 1805832
+bundleId: 2798015
+url: https://stantond11.shinyapps.io/shiny_app/
+when: 1581603809.01484

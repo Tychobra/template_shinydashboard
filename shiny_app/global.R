@@ -3,5 +3,8 @@ library(highcharter)
 library(DT)
 library(shinydashboard)
 library(tychobratools)
-
+library(ggplot2)
+library(rsconnect)
 tychobratools::hc_global_options()
+
+bcl <- read.csv("bcl-data.csv", stringsAsFactors = FALSE)
